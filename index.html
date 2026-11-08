@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tviy Vibe | Персоналізовані прикраси</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Tviy Vibe</div>
+        <nav>
+            <ul>
+                <li><a href="#quiz">Твій вайб</a></li>
+                <li><a href="#collections">Каталог</a></li>
+                <li><a href="#contact">Замовити</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Підкресли свій унікальний стиль</h1>
+            <p>Персоналізовані прикраси ручної роботи з японського бісеру та натурального каміння</p>
+            <a href="#collections" class="btn">Переглянути каталог</a>
+        </div>
+        <div class="hero-image">
+            <img src="Браслет _Ніжний дотик___Тонка, мінімалістична….jpeg" alt="Перлинний браслет">
+        </div>
+    </section>
+
+    <section id="quiz">
+        <h2>Інтерактив: Обери свій вайб</h2>
+        <p class="quiz-subtitle">Дай відповідь на два питання, і ми підберемо ідеальну прикрасу саме для тебе!</p>
+        
+        <div id="quiz-container" class="quiz-card">
+            <div id="question-1" class="quiz-step active">
+                <h3>Куди ти найчастіше одягаєш прикраси?</h3>
+                <div class="options">
+                    <button class="quiz-btn" onclick="nextStep(1, 'everyday')">На щодень (навчання, офіс, прогулянки)</button>
+                    <button class="quiz-btn" onclick="nextStep(1, 'party')">На вечірки та особливі події</button>
+                </div>
+            </div>
+
+            <div id="question-2" class="quiz-step">
+                <h3>Яким відтінкам ти віддаєш перевагу?</h3>
+                <div class="options">
+                    <button class="quiz-btn" onclick="showResult('light')">Світлі, пастельні та перлинні</button>
+                    <button class="quiz-btn" onclick="showResult('dark')">Насичені, темні або яскраві</button>
+                </div>
+            </div>
+
+            <div id="quiz-result" class="quiz-step">
+                <h3>Твій ідеальний метч знайдено!</h3>
+                <p id="result-text"></p>
+                <a href="#collections" class="btn">Перейти до каталогу</a>
+                <button class="btn outline" onclick="resetQuiz()" style="margin-top: 10px;">Пройти ще раз</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="collections">
+        <h2>Наш каталог</h2>
+        
+        <!-- Категорія: Каблучки -->
+        <h3 class="category-title">Каблучки</h3>
+        <div class="collection-grid">
+            <div class="collection-card">
+                <img src="новые позолоченные колечки с подвесками из….jpeg" alt="Каблучка Зелене серце">
+                <div class="card-content">
+                    <h3>Каблучка "Зелене серце"</h3>
+                    <p>Каблучка з зеленим авантюрином та позолоченою фурнітурою.</p>
+                    <span class="price">500 грн</span>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="Pierścionki z kamieni naturalnych.jpeg" alt="Сет Рожевий світанок">
+                <div class="card-content">
+                    <h3>Сет "Рожевий світанок"</h3>
+                    <p>Дві каблучки з рожевого кварцу та ніжного місячного каміння.</p>
+                    <span class="price">750 грн</span>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="Жми _ПЕРЕЙТИ НА ВЕБ-САЙТ_, чтобы увидеть ещё больше СТИЛЬНЫХ УКРАШЕНИЙ.jpeg" alt="Каблучка Смарагдова крапля">
+                <div class="card-content">
+                    <h3>Каблучка "Смарагдова крапля"</h3>
+                    <p>Білий бісер з яскравим акцентним зеленим кристалом.</p>
+                    <span class="price">600 грн</span>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="Колечка😍  Все каміння натуральне🤞🏼 Ціна….jpeg" alt="Каблучка Лабрадорит">
+                <div class="card-content">
+                    <h3>Каблучка "Лабрадорит"</h3>
+                    <p>Напівпрозоре каміння лабрадориту з мінімалістичним золотим серцем.</p>
+                    <span class="price">450 грн</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Категорія: Браслети -->
+        <h3 class="category-title">Браслети</h3>
+        <div class="collection-grid">
+            <div class="collection-card">
+                <img src="Браслет _Ніжний дотик___Тонка, мінімалістична….jpeg" alt="Перлинна розкіш">
+                <div class="card-content">
+                    <h3>Браслет "Перлинна розкіш"</h3>
+                    <p>Класичний браслет з великих перлин з інкрустованою магнітною застібкою.</p>
+                    <span class="price">1200 грн</span>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="Натуральне каміння не змінить твоє життя_⠀_Але….jpeg" alt="Браслет Земна енергія">
+                <div class="card-content">
+                    <h3>Браслет "Земна енергія"</h3>
+                    <p>Багатошаровий виріб із яшми, далматинського каменю та темних мінералів.</p>
+                    <span class="price">950 грн</span>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="Браслети для розкриття твоєї жіночності ✨ Ці….jpeg" alt="Сет Жіночність">
+                <div class="card-content">
+                    <h3>Сет "Жіночність"</h3>
+                    <p>Аметист, рожевий кварц та білий агат у стильній подарунковій коробці.</p>
+                    <span class="price">1100 грн</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Категорія: Намиста та Чокери -->
+        <h3 class="category-title">Намиста та чокери</h3>
+        <div class="collection-grid">
+            <div class="collection-card">
+                <img src="Прикраси з натурального каміння _ Чокери… (1).jpeg" alt="Неоновий чокер">
+                <div class="card-content">
+                    <h3>Неоновий чокер</h3>
+                    <p>Яскравий зелений текстильний шнурок із кулоном-серцем з аметисту.</p>
+                    <span class="price">550 грн</span>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="Це намисто — її віддзеркалення__У ньому поєднані….jpeg" alt="Намисто Квіткове серце">
+                <div class="card-content">
+                    <h3>Намисто "Квіткове серце"</h3>
+                    <p>Сріблясті металеві намистини з кулоном зі справжніми рожевими квітами.</p>
+                    <span class="price">850 грн</span>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="Коли хочеться весняного настрою_Полуничний кварц у….jpeg" alt="Сет Весняний настрій">
+                <div class="card-content">
+                    <h3>Сет "Весняний настрій"</h3>
+                    <p>Розкішне намисто з полуничного кварцу з об'ємною квіткою та сережками.</p>
+                    <span class="price">1500 грн</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Створимо красу разом</h2>
+        <p>Готова замовити прикрасу своєї мрії або маєш власний ескіз? Напиши нам в Instagram для узгодження деталей.</p>
+        <a href="#" class="btn">Написати в Instagram</a>
+    </section>
+
+    <footer>
+        <p>&copy; Турченко Валентина 2026, v.turchenko_femp_17_24_b_d@knute.edu.ua</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
